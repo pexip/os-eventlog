@@ -5,11 +5,15 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
-build: build-stamp
+build: build-arch build-indep
+build-arch: build-stamp
+build-indep: build-stamp
+
 build-stamp:
 	dh_testdir
 
 	# Add here commands to compile the package.
+	./autogen.sh
 	./configure --prefix=/usr
 	$(MAKE)
 
@@ -20,7 +24,9 @@ clean:
 	dh_testroot
 	rm -f build-stamp
 
-	-$(MAKE) distclean
+	[ ! -f Makefile ] || $(MAKE) distclean
+	-rm compile aclocal.m4 config.guess config.h.in config.sub configure config.log
+	-rm depcomp install-sh ltmain.sh missing mkinstalldirs
 
 	dh_clean
 
@@ -47,7 +53,7 @@ binary-arch: build install
 	dh_install --fail-missing --sourcedir=debian/tmp
 	dh_installman
 	dh_link
-	dh_strip -a --dbg-package=libevtlog0
+	dh_strip libevtlog0 --dbg-package=libevtlog0-dbg
 	dh_compress
 	dh_fixperms
 	dh_makeshlibs

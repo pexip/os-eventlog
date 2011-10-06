@@ -1,0 +1,92 @@
+eventlog (0.2.12-5) unstable; urgency=low
+
+  * Set the dependency to 0.2.12 in shlib. Closes: #644475
+
+ -- SZALAY Attila <sasa@debian.org>  Thu, 06 Oct 2011 20:36:34 +0200
+
+eventlog (0.2.12-4) unstable; urgency=low
+
+  * Added debian/watch file.
+
+ -- SZALAY Attila <sasa@debian.org>  Mon, 26 Sep 2011 11:32:46 +0200
+
+eventlog (0.2.12-3) unstable; urgency=low
+
+  * Update policy level to 3.9.2.
+  * Added the two missing recommended target.
+  * Removel config.log in the clean target.
+
+ -- SZALAY Attila <sasa@debian.org>  Thu, 01 Sep 2011 00:31:39 +0200
+
+eventlog (0.2.12-2) unstable; urgency=low
+
+  * Upgrade to current automake. Closes: #622007
+    - the patch came from Colin Watson <cjwatson@ubuntu.com>.
+
+ -- SZALAY Attila <sasa@debian.org>  Sun, 28 Aug 2011 16:44:58 +0200
+
+eventlog (0.2.12-1) unstable; urgency=low
+
+  * New upstream version.(Closes: #618913)
+  * Fixed lintian warnings and errors.
+  * Fixed a typo in libevtlog-dev description. (Closes: #604704)
+
+ -- SZALAY Attila <sasa@debian.org>  Sat, 19 Mar 2011 18:47:19 +0100
+
+eventlog (0.2.8~1-2) unstable; urgency=low
+
+  * Added libtool dependency.
+
+ -- SZALAY Attila <sasa@debian.org>  Tue,  5 Feb 2008 22:18:16 +0100
+
+eventlog (0.2.8~1-1) unstable; urgency=low
+
+  * New upstream version.
+    - With upstream helpthe eventlog be able to compile.
+
+ -- SZALAY Attila <sasa@debian.org>  Tue,  5 Feb 2008 21:26:13 +0100
+
+eventlog (0.2.7~1-1) unstable; urgency=low
+
+  * New upstream version.
+    - This version fixes a /etc/eventlog.conf file parsing problem.
+  * Bumped Standard-Version to 3.7.3.
+
+ -- SZALAY Attila <sasa@debian.org>  Mon,  4 Feb 2008 23:44:18 +0100
+
+eventlog (0.2.5-1) unstable; urgency=low
+
+  * New upstream version.
+  * Added debian version.
+  * Changed compat level to 5. Closes: #371068
+
+ -- SZALAY Attila <sasa@debian.org>  Wed, 19 Jul 2006 00:11:51 +0200
+
+eventlog (0.2.4) unstable; urgency=low
+
+  * New upstream version
+  * This version is ready for the unstable (I hope)
+
+ -- SZALAY Attila <sasa@debian.org>  Sat, 21 Jan 2006 14:18:43 +0100
+
+eventlog (0.2.3+20051105) experimental; urgency=low
+
+  * New upstream version. Closes: #337654, #333202
+
+ -- SZALAY Attila <sasa@debian.org>  Sun,  6 Nov 2005 23:08:18 +0000
+
+eventlog (0.2.3+20051031) experimental; urgency=low
+
+  * New upstream version.
+
+ -- SZALAY Attila <sasa@debian.org>  Mon, 31 Oct 2005 19:06:44 +0000
+
+eventlog (0.2.3+20050116+1856) experimental; urgency=low
+
+  * Initial Release
+
+ -- SZALAY Attila <sasa@debian.org>  Tue, 24 May 2005 20:21:06 +0200
+
+Local variables:
+mode: debian-changelog
+End:
