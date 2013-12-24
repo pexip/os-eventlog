@@ -1,9 +1,11 @@
 Source: eventlog
 Section: libs
 Priority: extra
-Maintainer: SZALAY Attila <sasa@debian.org>
+Maintainer: Pexip AS <packaging@pexip.com>
+XSBC-Pexip-Original-Maintainer: SZALAY Attila <sasa@debian.org>
 Build-depends: debhelper (>=5), automake, autoconf, libtool
 Standards-Version: 3.9.2
+XS-Pexip-Upstream: http://archive.ubuntu.com/ubuntu/ precise
 
 Package: libevtlog0
 Architecture: any
