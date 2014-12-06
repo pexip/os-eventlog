@@ -3,7 +3,7 @@ Section: libs
 Priority: extra
 Maintainer: SZALAY Attila <sasa@debian.org>
 Build-depends: debhelper (>=9), automake, autoconf, libtool, dh-autoreconf
-Standards-Version: 3.9.4
+Standards-Version: 3.9.6
 Vcs-Git: https://github.com/mochrul/eventlog.git
 Vcs-Browser: https://github.com/mochrul/eventlog.git
 
@@ -11,6 +11,7 @@ Package: libevtlog0
 Architecture: any
 Section: libs
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Pre-Depends: multiarch-support
 Multi-Arch: same
 Description: Syslog event logger library
  The EventLog library aims to be a replacement of the simple syslog() API

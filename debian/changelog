@@ -1,3 +1,12 @@
+eventlog (0.2.12-7) unstable; urgency=low
+
+  * [9def663] Added multiarch-support to pre-depends
+  * [727b74b] Raised the Standards/Version to 3.9.6.
+    Checked the upgrading checklist and no other
+    changes are necessary.
+
+ -- SZALAY Attila <sasa@debian.org>  Sat, 06 Dec 2014 17:01:15 +0100
+
 eventlog (0.2.12-6) unstable; urgency=low
 
   * Removed somewhat accidentally included files
