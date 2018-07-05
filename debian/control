@@ -7,7 +7,7 @@ Build-depends: debhelper (>=9), automake, autoconf, libtool, dh-autoreconf
 Standards-Version: 3.9.4
 Vcs-Git: https://github.com/mochrul/eventlog.git
 Vcs-Browser: https://github.com/mochrul/eventlog.git
-XS-Pexip-Upstream: http://ftp.debian.org/debian/ jessie
+XS-Pexip-Upstream: http://ftp.debian.org/debian/ stretch
 
 Package: libevtlog0
 Architecture: any
